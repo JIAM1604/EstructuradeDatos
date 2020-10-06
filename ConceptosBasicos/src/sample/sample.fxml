@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane>
+         <children>
+            <GridPane alignment="center" hgap="10" vgap="10">
+</GridPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblTitulo" cache="true" layoutX="182.0" layoutY="30.0" prefHeight="50.0" prefWidth="188.0" text="MI PRIMER PROGRAMA" textAlignment="CENTER" textFill="#09337c" textOverrun="CLIP">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <BoxBlur width="0.0" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtEdad" layoutX="47.0" layoutY="128.0" />
+      <Button layoutX="231.0" layoutY="128.0" mnemonicParsing="false" onAction="#evento1" text="Aceptar" />
+      <Label layoutX="65.0" layoutY="97.0" text="Insertar edad" textFill="#bf2222">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
