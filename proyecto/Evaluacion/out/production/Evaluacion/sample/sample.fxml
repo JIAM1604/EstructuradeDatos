@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <cursor>
+      <Cursor fx:constant="S_RESIZE" />
+   </cursor>
+   <effect>
+      <Lighting bumpInput="$null">
+         <light>
+            <Light.Distant azimuth="170.58" color="#0762e3cf" elevation="132.91" />
+         </light>
+      </Lighting>
+   </effect>
+   <children>
+      <Button layoutX="343.0" layoutY="129.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Insertar " />
+      <ComboBox fx:id="combo" editable="true" layoutX="14.0" layoutY="129.0" prefWidth="150.0" />
+      <TextField fx:id="texField" layoutX="176.0" layoutY="129.0" />
+      <Text fill="#ae0404" layoutX="176.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pescado" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Bradley Hand ITC" size="45.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de pez">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="210.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por Nacimiento">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="16.0" layoutY="171.0" mnemonicParsing="false" onAction="#procesar" prefHeight="25.0" prefWidth="446.0" text="Progresar " />
+      <ListView fx:id="lista" layoutX="20.0" layoutY="217.0" prefHeight="200.0" prefWidth="446.0" />
+      <ImageView fx:id="imageView" fitHeight="92.0" fitWidth="158.0" layoutX="357.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Pictures/descarga.jpg" />
+         </image>
+         <effect>
+            <Bloom threshold="1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
